@@ -1,0 +1,104 @@
+:root {
+    --blackground: #0810b3;
+    --prinary: #4c4c4c;
+    --gray: #808080;
+    --white: #ffffff;
+    --green: #38b781;
+    --red: #ff0000;
+    --gradientBlue: linear-gradient(135deg, #6b73ff 0%, #000dff 100%);
+    --gradientHeader: linear-gradient(
+        to bottom right,
+        #6b73ff 0%,
+        #000dff 100%
+    );
+    --USDT: #1ba27a;
+    --DOGE: #f0c234;
+    --BTC: #f7931a;
+    --BNB: #ffda41;
+    --textHoverHeader: rgb(169, 192, 255);
+}
+
+h3 {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 68px;
+}
+h4 {
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 48px;
+}
+h6 {
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 28px;
+}
+
+.content-proflie {
+    
+}
+.text-transaction {
+    font-size: 2rem;
+    font-weight: 900;
+    background: -webkit-linear-gradient(#6b73ff, #000dff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.nav-options {
+    margin: 1rem 0 0 0;
+    font-weight: 800;
+    font-size: 20px;
+}
+.nav-link:hover {
+    color: #888888 ;
+}
+.nav-link {
+    color: #888888 ;
+}
+.nav-item .active {
+    color: black;
+}
+.label-select {
+    color: #4C4C4C;
+    font-size: 18px;
+    font-weight: 900;
+}
+.table-transaction table {
+    border-left: none;
+    border-right: none;
+  
+}
+.btn-transaction {
+    gap: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+   
+}
+.btn-cancel {
+    background-color: white;
+    border-color: #888888;
+    width: 20rem;
+}
+.btn-cancel {
+    background-color: white;
+    border-color: #888888;
+    width: 15rem;
+    font-weight: 600;
+    font-size: 16px;
+}
+.btn-cancel:hover {
+    background-color: #666666;
+}
+.btn-confirm {
+    background-image: var(--gradientBlue) ;
+    color: white;
+    width: 15rem;
+    font-weight: 600;
+    font-size: 16px;
+}
+.btn-confirm:hover {
+    color: white;
+}
+
+

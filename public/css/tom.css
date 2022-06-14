@@ -1,0 +1,611 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    scroll-behavior: smooth;
+    font-family: "Mulish", sans-serif;
+}
+:root {
+    --blackground: #0810b3;
+    --prinary: #4c4c4c;
+    --gray: #808080;
+    --white: #ffffff;
+    --white1: #f1f1f1;
+    --white2: #f2f2f2;
+
+    --green: #38b781;
+    -red: #ff0000;
+    --gradientBlue: linear-gradient(135deg, #6b73ff 0%, #000dff 100%);
+
+    --text-tile: #6b73ff;
+    --value-statist: #1975ff;
+
+    --USDT: #1ba27a;
+    --DOGE: #f0c234;
+    --BTC: #f7931a;
+    --BNB: #ffda41;
+}
+
+h3 {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 68px;
+}
+h4 {
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 48px;
+}
+h6 {
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 28px;
+}
+
+.content-profile {
+    padding-left: 1rem;
+    padding-bottom: 3.5rem;
+    overflow: hidden;
+}
+
+.border-image-user {
+    width: 37px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background: var(--white);
+    border: 2px solid var(--prinary);
+    border-radius: 30px;
+}
+.user-row {
+    padding-left: 30px;
+}
+.symbols-icon {
+    position: absolute;
+    padding-bottom: 5px;
+    left: 5px;
+}
+
+.group-text-color {
+    padding-top: 15px;
+    color: var(--prinary);
+}
+.text-balance {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    margin-right: 2rem;
+}
+.btn-hidden {
+    position: relative;
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    background: var(--white);
+    border: 1px solid var(--prinary);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    padding: 0.2rem;
+    padding-left: 2rem;
+}
+.money-amount {
+    color: var(--prinary);
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 48px;
+}
+#backButton {
+    border-radius: 4px;
+    padding: 8px;
+    border: none;
+    font-size: 16px;
+    background-color: #2eacd1;
+    color: var(--white);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.invisible {
+    display: none;
+}
+.chart-script #myChart {
+    width: 80% !important;
+    height: 400px !important;
+}
+.button-balance-detail {
+    display: flex;
+    justify-content: right;
+    margin-left: -62px;
+}
+.btn-deposit {
+    background: linear-gradient(135deg, #6b73ff 0%, #000dff 100%);
+    border-radius: 8px;
+    border: none;
+}
+.btn-withdraw {
+    background: var(--white2);
+    border-radius: 8px;
+    margin-left: 1rem;
+    border: none;
+}
+.image-line {
+    position: absolute;
+    right: 17px;
+    top: 8px;
+    width: 10px !important;
+}
+.btn-deposit > span {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: var(--white);
+    padding: 0rem 2rem;
+}
+.btn-withdraw > span {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: var(--prinary);
+}
+.money-cryto {
+    text-align: right;
+}
+a.canvasjs-chart-credit {
+    display: none;
+}
+.outlined {
+    background-color: var(--white);
+    border: none;
+}
+.info-user {
+    background: var(--white);
+    box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.15);
+    border-radius: 0px 0px 0px 16px;
+    margin-bottom: 2rem;
+    padding: 1rem 0rem;
+}
+
+.text-title {
+    padding: 1.5rem 0rem 0rem 0rem;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 40px;
+    color: var(--text-tile);
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.title-profile {
+    margin: 1.5rem 0rem 0.5rem 0rem;
+}
+.copy-link {
+    cursor: pointer;
+}
+.image-line-profile {
+    padding-top: 14px;
+    float: right;
+    margin-right: 1.1rem;
+}
+.text-content-bold {
+    color: var(--prinary);
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+.title-statist {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.011em;
+}
+.value-statist {
+    color: var(--value-statist);
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.detail-box-cryto {
+    font-family: "Mulish";
+    margin: 1rem 0rem;
+    padding: 1rem 1rem 1rem 1rem;
+    background: var(--white);
+    border: 1px solid var(--white2);
+    box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.15);
+    border-radius: 12px;
+}
+.image-cryto {
+    margin: 0 auto;
+    text-align: center;
+}
+.image-cryto img {
+    width: 70%;
+}
+.img-display {
+    width: 120px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+}
+#chartContainer {
+    height: 500px;
+    width: 100%;
+}
+#valueText1 {
+    color: var(--value-statist);
+    width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.text-icon-cryto {
+    padding-left: 0;
+}
+
+.text-icon-cryto > .name-cryto {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+}
+
+.name1 {
+    color: var(--USDT);
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 40px;
+}
+.name2 {
+    color: var(--BTC);
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 40px;
+}
+.name3 {
+    color: var(--DOGE);
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 40px;
+}
+.name4 {
+    color: var(--BNB);
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.value-money-box {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.quantity-wallet-box {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: var(--gray);
+}
+.quantity-wallet-box span {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.image-showmore {
+    position: absolute;
+    left: 50%;
+    transform: rotate(-270deg);
+}
+.image-showmore-less {
+    position: absolute;
+    left: 50%;
+    transform: rotate(270deg);
+}
+/* Button Toggle Crypto Fiat */
+.toggle-button {
+    width: 140px;
+    height: 42px;
+    display: flex;
+    justify-content: left;
+    background: var(--white2);
+    border-radius: 8px;
+    padding-left: 5px;
+}
+.big-toggle-fiat {
+    border-radius: 8px;
+    height: 35px;
+    border: none;
+    margin-top: 3px;
+}
+.small-toggle-crypto {
+    background: var(--white);
+    border-radius: 8px;
+    height: 35px;
+    border: none;
+    margin-top: 3px;
+}
+.small-toggle-crypto > span {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+}
+.big-toggle-fiat > span {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+}
+.label-referral {
+    padding-right: 0.5rem;
+}
+canvas.canvasjs-chart-canvas {
+    width: 100%;
+}
+.text-right {
+    text-align: right;
+    margin-left: -20px;
+}
+.money-amount-box {
+    margin-top: 10px;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+}
+
+.c-details span {
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon img {
+    width: 60px;
+}
+
+.text1 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.text2 {
+    color: #a5aec0;
+}
+
+.user-list-table {
+    margin: 0px 1.5rem;
+    background: #ffffff;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.14), 0px 3px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 8px rgba(0, 0, 0, 0.12);
+    border-radius: 16px;
+}
+.data-table {
+    padding: 1rem 2.5rem;
+}
+.data-content  td {
+    line-height: 50px;
+}
+
+.data-content th {
+    line-height: 50px;
+}
+/* .table {
+    box-sizing: border-box;
+    border: 0.5px solid #676767;
+    border-radius: 4px 4px 0px 0px;
+} */
+
+.text-user {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+}
+.btn-add {
+    margin: 1rem 2rem;
+    background: linear-gradient(135deg, #6b73ff 0%, #000dff 100%);
+    border-radius: 4px;
+    color: #fff;
+}
+.btn-add:hover {
+    margin: 1rem 2rem;
+    background: linear-gradient(135deg, #6b73ff 0%, #000dff 100%);
+    border-radius: 4px;
+    color: #fff;
+}
+.active-status {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    align-items: center;
+    margin: auto 0;
+    color: #00b432;
+}
+
+.deactive-status {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    align-items: center;
+    color: #ff0000;
+}
+.title-add-payment {
+    background: linear-gradient(135deg, #6b73ff 0%, #000dff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 48px;
+}
+.title-add-payment img {
+    transform: rotate(180deg);
+    margin-right: 0.5rem;
+    padding-top: 5px;
+}
+.text-modal {
+    background: -webkit-linear-gradient(135deg, #6b73ff 0%, #000dff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+@media (max-width: 576px) {
+    .image-cryto {
+        width: 100%;
+        text-align: center;
+    }
+    .image-cryto img {
+        width: 50%;
+    }
+    .button-balance-detail {
+        display: flex;
+        justify-content: right;
+        margin-left: -1.1rem;
+    }
+}
+
+/* @media only screen and (min-width: 600px) {
+    body {
+        background-color: green;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: px) and (max-width: 1350px) {
+    body {
+        background-color: green;
+    }
+}

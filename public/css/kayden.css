@@ -1,0 +1,126 @@
+html {
+    font-size: 16px;
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 10px;
+    }
+}
+@media (min-width: 576px) {
+    html {
+        font-size: 10px;
+    }
+    
+}
+
+
+@media (min-width: 768px) { html {
+    font-size: 12px;
+    }  
+}
+
+ 
+@media (min-width: 992px) {  
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1200px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1400px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.kyc-title-form{
+    font-weight: 800;
+    font-size:1.8rem;
+    background: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%);
+    -webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+    padding-top:0.6rem;
+    padding-bottom:0.6rem;
+}
+.kyc-title-subheaderform{
+    font-weight: 800;
+    font-size:1.4rem;
+    padding-top:0.6rem;
+    padding-bottom:0.6rem;
+}
+.kyc-country{
+    background-image: url(../images/vietnam-flag.png);
+    background-size: 1.8rem;
+    background-repeat: no-repeat;
+    background-position: top 0.2rem left 0.2rem;
+}
+.btn-kyc{
+    position: absolute;
+    bottom:2.8rem;
+    right:1.2rem;
+    width: fit-content;
+    text-align: center;
+    
+}
+.kyc-h3{
+    font-weight:800;
+}
+.identity-content{
+    font-weight: 600;
+    font-size: 1rem;
+}
+input[type="file"]{
+    display: none;
+}
+.identity-upload label{
+    padding:2.6rem 0.6rem;
+    text-align: center;
+    border: 0.01rem solid #999999;
+    border-radius: 1rem;
+    width: 80%;
+    
+    cursor: pointer;
+}
+.identity-upload{
+    padding-bottom: 3rem;
+}
+
+
+.selfie-upload label{
+    width: 100%;
+    text-align: center;
+    border: 0.01rem solid #999999    ;
+    border-radius: 0.4rem;
+    margin-top:1.2rem;
+    cursor: pointer;
+    font-weight: 700;
+    font-size:1rem;
+    color: #4C4C4C;
+    padding: 1rem 0rem;
+}
+.selfie-upload{
+    padding-bottom: 1.2rem;
+}
+
+.selfie-content{
+    font-weight: 600;
+    font-size: 1rem;;
+}
+.under-review-background{
+    background-image: url(../images/image122.png);
+    background-size: 1.8rem;
+    background-repeat: cover;
+}
+.selfie-box{
+    padding: 4.8rem 0rem;
+    border:0.1rem solid #999999;
+    border-radius: 0.4rem;
+    
+}

@@ -1,0 +1,21 @@
+h2{
+    color: var(--white);
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 68px;
+}
+h3{
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 68px;
+}
+h4{
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 48px;
+}
+h6{
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 28px;
+}
